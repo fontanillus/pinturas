@@ -8,10 +8,11 @@
     h1 {
     color:  deeppink;
     text-shadow: rgb(246, 197, 233) 2px 2px 2px;
-    }
+        }
 
     p {
     color: pink;
+    font-size: medium;
     }
 
     
