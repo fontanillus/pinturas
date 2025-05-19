@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manos de pintura</title>
+  <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body>
+  <h1>Calcular litros de Pintura</h1>
+  <p>
+    <label for="alto">Alto de la pared:</label>
+    <input type="number" id="alto" required>
+  </p>
+  <p>
+    <label for="ancho">Ancho de la pared:</label>
+    <input type="number" id="ancho" required>
+  </p>
+  <p>
+    <label for="manos">Número de manos a aplicar:</label>
+    <input type="number" id="manos" required />
+  </p>
+  <p><button type="button" onclick="totalLitros()"> Calcular</button></p>
+  <p id="calcularLitros">Los litros de pintura que se deben comprar:</p>
+
+  <script>
+    const ALTO = document.getElementById("alto");
+    const ANCHO = document.getElementById("ancho");
+    const MANOS = document.getElementById("manos");
+    const RESULTADO = document.getElementById("calcularLitros");
+
+    function totalLitros() {
+      let alturaPared = Number(ALTO.value);
+      let anchuraPared = Number(ANCHO.value);
+      let manos = Number(MANOS.value);
+      const COBERTURA = 12;
+
+      let total = (alturaPared * anchuraPared) * manos / 12;
+
+      RESULTADO.innerHTML= "Necesitas comprar los siguientes litros de pintura:" + total;
+      console.log(total);
+    }
+
+  </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+    body {
+      width: 50%;      
+      margin: 0 auto;
+      height: auto;
+      background-image: url(../img/fondo.png);
+    }
+    
+    h1 {
+    color:  deeppink;
+    text-shadow: rgb(246, 197, 233) 2px 2px 2px;
+    }
+
+    p {
+    color: pink;
+    }
+
+    
+    
